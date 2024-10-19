@@ -1,9 +1,14 @@
+const { inquirerMenu, inquirerPausa } = require("./helpers/inquirer");
+
 require("colors");
 
-const { mostrarMenu } = require("./helpers/mensajes");
-
 const main = async()=>{
-    mostrarMenu();
+    let optionSelected = 0;
+    do{
+        optionSelected = await inquirerMenu();
+        await inquirerPausa();
+    }
+    while (optionSelected !=0 );
 };
 
 main();
