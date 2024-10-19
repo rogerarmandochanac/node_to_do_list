@@ -1,0 +1,14 @@
+{
+  "name": "node_to_do_list",
+  "version": "0.0.1",
+  "description": "Una lista actualizable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roger Armando Chan Ac",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
