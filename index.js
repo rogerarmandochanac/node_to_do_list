@@ -14,7 +14,7 @@ const main = async()=>{
                 const desc = await inquirerInput("Descripcion");
                 tareas.crearTarea(desc);
             case 2:
-                console.log(tareas.__listado);
+                console.log(tareas.listadoArr);
         }
 
         await inquirerPausa();
