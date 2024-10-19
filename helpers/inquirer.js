@@ -54,4 +54,9 @@ const inquirerPausa = async()=>{
     return pausa;
 }
 
-module.exports = {inquirerMenu, inquirerPausa};
+const inquirerInput = async(message)=>{
+    const {desc} = await inquirer.prompt([{type:"input", name:"desc", message}]);
+    return desc;
+}
+
+module.exports = {inquirerMenu, inquirerPausa, inquirerInput};
