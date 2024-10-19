@@ -1,3 +1,9 @@
-const {mostrarMenu} = require("./helpers/inquirerMenu")
+require("colors");
 
-mostrarMenu();
+const { mostrarMenu } = require("./helpers/mensajes");
+
+const main = async()=>{
+    mostrarMenu();
+};
+
+main();
