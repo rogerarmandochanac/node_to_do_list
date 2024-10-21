@@ -26,6 +26,12 @@ class Tareas{
             this.__listado[tarea.id] = tarea;
         })
     }
+
+    listadoCompleto(){
+        this.listadoArr.forEach((tarea, index)=>{
+            console.log(`${index + 1}.-${tarea.desc} :: ${tarea.completado?"Completado".green:"Pendiente".red}`); 
+        })
+    }
 }
 
 module.exports = Tareas;

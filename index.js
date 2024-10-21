@@ -14,8 +14,6 @@ const main = async()=>{
         tareas.cargarTareasFromArray(data);
     }
 
-    await inquirerPausa();
-
     do{
         optionSelected = await inquirerMenu();
 
@@ -25,7 +23,7 @@ const main = async()=>{
                 tareas.crearTarea(desc);
                 break;
             case 2:
-                console.log(tareas.listadoArr);
+                tareas.listadoCompleto();
                 break;
         }
 
