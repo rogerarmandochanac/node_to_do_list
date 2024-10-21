@@ -32,6 +32,28 @@ class Tareas{
             console.log(`${index + 1}.-${tarea.desc} :: ${tarea.completado?"Completado".green:"Pendiente".red}`); 
         })
     }
+
+    listadoCompletadoPendiente(completado=true){
+        let lista = undefined;
+        if (completado){
+            lista = this.listadoArr.filter((tarea)=>{
+                if (tarea.completado){
+                    return true;
+                }
+            })
+        }
+        else{
+            lista = this.listadoArr.filter((tarea)=>{
+                if (!tarea.completado){
+                    return true;
+                }
+            })
+        }
+        lista.forEach((tarea, index)=>{
+            console.log(`${index + 1}.-${tarea.desc} :: ${tarea.completado?"Completado".green:"Pendiente".red}`); 
+        })
+        
+    }
 }
 
 module.exports = Tareas;
