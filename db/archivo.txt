@@ -1,1 +1,1 @@
-[{"id":"c87ab1ce-f7bb-4fe4-92f3-f844fbcdbc40","desc":"listar las piedras del infinito","completado":null},{"id":"f4aff1ca-1f63-4f88-b6f2-dfaff97c4573","desc":"Poder","completado":null}]
+[{"id":"bf6924ad-7417-497f-ad36-ea277d94346c","desc":"Uno","completado":null},{"id":"f2fcfff4-b375-4ab2-8927-d18fa10f53a3","desc":"Roger Armando","completado":null},{"id":"26afd301-98af-46fd-8c8f-32df2832c924","desc":"Una tarea mas","completado":null},{"id":"4c81fc20-a789-4fa8-b80b-b7fc4cccef2f","desc":"Otra mas","completado":null}]
