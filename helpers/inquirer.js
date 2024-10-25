@@ -59,4 +59,40 @@ const inquirerInput = async(message)=>{
     return desc;
 }
 
-module.exports = {inquirerMenu, inquirerPausa, inquirerInput};
+const inquirerListadoTareasBorrar = async (tareas=[])=>{
+    let choices = tareas.map(tarea=>{
+        return {
+            value: tarea.id,
+            name: tarea.desc,
+        }
+    })
+
+    let questions = [
+        {
+            type:"list",
+            name:"id",
+            message:"Borrar",
+            choices,
+        }
+    ]
+
+    let {id} = await inquirer.prompt(questions);
+    return id;
+
+
+}
+
+const confirmarBorrado =async ()=>{
+    let choices = [
+        {
+            type:"confirm",
+            name:"confirmar",
+            message:"Esta seguro",
+        }
+    ]
+
+    const {confirmar} = await inquirer.prompt(choices);
+    return confirmar;
+}
+
+module.exports = {inquirerMenu, inquirerPausa, inquirerInput, inquirerListadoTareasBorrar, confirmarBorrado};

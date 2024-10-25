@@ -7,6 +7,12 @@ class Tareas{
         this.__listado = {};
     }
 
+    borrarTarea(id=""){
+        if(this.__listado[id]){
+            delete this.__listado[id];
+        }
+    }
+
     crearTarea(desc){
         const tarea = new Tarea(desc);
         this.__listado[tarea.id] = tarea;
