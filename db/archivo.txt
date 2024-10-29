@@ -1,1 +1,1 @@
-[{"id":"f2fcfff4-b375-4ab2-8927-d18fa10f53a3","desc":"Roger Armando","completado":null},{"id":"26afd301-98af-46fd-8c8f-32df2832c924","desc":"Una tarea mas","completado":null},{"id":"d2267f76-bbf4-44d2-95c7-4451fe7cfaae","desc":"Un cafe","completado":null}]
+[{"id":"f2fcfff4-b375-4ab2-8927-d18fa10f53a3","desc":"Roger Armando","completado":null},{"id":"26afd301-98af-46fd-8c8f-32df2832c924","desc":"Una tarea mas","completado":"2024-10-29T00:15:21.489Z"}]

@@ -60,6 +60,18 @@ class Tareas{
         })
         
     }
+    toogleCompletar(ids=[]){
+        ids.forEach(id=>{
+            let tarea = this.__listado[id];
+            tarea.completado = new Date().toISOString();
+        })
+
+        this.listadoArr.forEach(tarea=>{
+            if (!ids.includes(tarea.id)){
+                tarea.completado = null;
+            }
+        })
+    }
 }
 
 module.exports = Tareas;

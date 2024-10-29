@@ -28,7 +28,7 @@ const questions = [
                 name:"Borrar tareas."
             },
             {
-                value:5,
+                value:6,
                 name:"Completar tareas."
             },
             {
@@ -82,6 +82,30 @@ const inquirerListadoTareasBorrar = async (tareas=[])=>{
 
 }
 
+const inquirerCompletar = async (tareas=[])=>{
+    let choices = tareas.map(tarea=>{
+        return {
+            value: tarea.id,
+            name: tarea.desc,
+            checked: (tarea.completado) ? true : false,
+        }
+    })
+
+    let questions = [
+        {
+            type:"checkbox",
+            name:"ids",
+            message:"Confirmar",
+            choices,
+        }
+    ]
+
+    let {ids} = await inquirer.prompt(questions);
+    return ids;
+
+
+}
+
 const confirmarBorrado =async ()=>{
     let choices = [
         {
@@ -95,4 +119,4 @@ const confirmarBorrado =async ()=>{
     return confirmar;
 }
 
-module.exports = {inquirerMenu, inquirerPausa, inquirerInput, inquirerListadoTareasBorrar, confirmarBorrado};
+module.exports = {inquirerMenu, inquirerPausa, inquirerInput, inquirerListadoTareasBorrar, confirmarBorrado, inquirerCompletar};
